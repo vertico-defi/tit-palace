@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Color Palette Reference */
+/* --color-dark-bg: #1e1e1e; - Main UI backgrounds, text, and elements */
+/* --color-primary-accent: #ff19cf; - Emphasis on CTAs, interactive elements */
+/* --color-secondary-accent: #f9db87; - Highlights, secondary buttons/borders */
+/* --color-light-bg: #f4f4f4; - Backgrounds for contrast against dark elements */
+/* --color-highlight-accent: #ffc0cb; - Background highlights, soft UI elements */
+/* --color-contrast-accent: #ffe600; - Attention-drawing elements, warnings */
+/* --color-neutral-dark: #333333; - Subdued text/icons for less prominence */
+/* --color-neutral-light: #e8e8e8; - Dividers, subtle backgrounds */
+/* --color-pink-tint: #ff4fd5; - Lighter interactive elements, subtle accents */
+/* --color-lightest-pink: #ff85db; - Very subtle pink highlights, soft glow */
+/* --color-pink-shade: #cc169b; - Strong accents for contrast and depth */
+/* --color-darkest-pink: #990f74; - Bold elements requiring high contrast */
+/* --color-gold-tint: #fbe5a3; - Gentle warmth for notifications, soft alerts */
+/* --color-lightest-gold: #fdeecd; - Calm backgrounds, serene accents */
+/* --color-gold-shade: #c6af6f; - Rich interactive elements, mature highlights */
+/* --color-darkest-gold: #93845b; - Sturdy elements, grounding accents */
+

@@ -1,0 +1,163 @@
+/* Homepage CSS */
+
+/* Utilizing the color scheme and fonts defined previously */
+/* Color Palette */
+:root {
+    --color-dark-bg: #1e1e1e; /* Main UI backgrounds, text, and elements */
+    --color-primary-accent: #ff19cf; /* Emphasis on CTAs, interactive elements */
+    --color-secondary-accent: #f9db87; /* Highlights, secondary buttons/borders */
+    --color-light-bg: #f4f4f4; /* Backgrounds for contrast against dark elements */
+    --color-highlight-accent: #ffc0cb; /* Background highlights, soft UI elements */
+    --color-contrast-accent: #ffe600; /* Attention-drawing elements, warnings */
+    --color-neutral-dark: #333333; /* Subdued text/icons for less prominence */
+    --color-neutral-light: #e8e8e8; /* Dividers, subtle backgrounds */
+    --color-pink-tint: #ff4fd8; /* Lighter interactive elements, subtle accents */
+    --color-lightest-pink: #ff85db; /* Very subtle pink highlights, soft glow */
+    --color-pink-shade: #cc169b; /* Strong accents for contrast and depth */
+    --color-darkest-pink: #990f74; /* Bold elements requiring high contrast */
+    --color-gold-tint: #fbe5a3; /* Gentle warmth for notifications, soft alerts */
+    --color-lightest-gold: #fdeecd; /* Calm backgrounds, serene accents */
+    --color-gold-shade: #c6af6f; /* Rich interactive elements, mature highlights */
+    --color-darkest-gold: #93845b; /* Sturdy elements, grounding accents */
+}
+
+/* Font Faces */
+@font-face {
+    font-family: 'Lato';
+    src: url('../../assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../../assets/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../../assets/fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../../assets/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the default body styles */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-dark-bg);
+    color: var(--color-text);
+}
+.homepage {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-text);
+}
+
+.homepage h1 {
+    color: var(--color-secondary-accent);
+    margin-bottom: 1em; /* Add space below the header */
+}
+
+.homepage p {
+    margin-bottom: 1em; /* Add space below the paragraph */
+}
+
+.homepage ol {
+    margin-left: 2em; /* Add indentation to the list */
+    list-style-type: none; /* No bullets for list items */
+    counter-reset: step-counter; /* Set up a counter for custom numbering */
+}
+
+.homepage ol li {
+    counter-increment: step-counter; /* Increment the counter for each list item */
+    margin-bottom: 1em; /* Add space between list items */
+    position: relative; /* Position relative to allow absolute positioning of pseudo elements */
+}
+
+.homepage ol li:before {
+    content: counter(step-counter); /* Insert the counter as content */
+    position: absolute; /* Absolute position to place it on the left */
+    left: -2.5em; /* Position to the left of the list items */
+    background-color: var(--color-secondary-accent); /* Use the secondary accent color */
+    color: var(--color-dark-bg);
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+    line-height: 1.5em; /* Center the text line */
+    border-radius: 50%; /* Make it circular */
+}
+
+.account-setup-button, .navigate-button {
+    background-color: var(--color-primary-accent);
+    color: var(--color-text);
+    padding: 0.5em 1em; /* Add padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Align items inline */
+    margin-top: 0.5em; /* Space from the text */
+}
+
+.account-setup-button:hover, .navigate-button:hover {
+    background-color: var(--color-button-hover);
+    transform: translateY(-2px); /* Slight raise effect */
+    text-decoration: none; /* Ensuring no underline on hover for links */
+}
+
+.account-setup-button:active, .navigate-button:active {
+    transform: translateY(1px); /* Push down effect when clicked */
+}
+  
+  /* Custom toast container positioning */
+  .ToastContainer {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Custom styles for buttons inside the toast notifications */
+  .toast-button {
+    background-color: var(--color-primary-accent);
+    color: var(--color-text);
+    /* You can add more styles here specific to toast buttons if needed */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .homepage {
+      height: auto; /* Adjust height for mobile */
+      padding: 1em;
+    }
+  
+    .homepage h1 {
+      font-size: 2rem; /* Slightly smaller font size for mobile */
+    }
+  
+    .homepage p {
+      font-size: 1rem;
+    }
+  }
+  

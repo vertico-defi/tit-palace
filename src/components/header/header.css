@@ -1,0 +1,121 @@
+/* Defining colors from the color palette */
+:root {
+    --color-dark-bg: #1e1e1e; /* Main UI backgrounds */
+    --color-primary-accent: #ff19cf; /* Emphasis on CTAs */
+    --color-secondary-accent: #f9db87; /* Highlights */
+    --color-text: #f4f4f4; /* Main text color */
+    --color-button-hover: #ff4fd5; /* Button hover state */
+    --color-button-border: #ff66e0; 
+}
+
+.body {
+    color: var(--color-text);
+    background-color: var(--color-dark-bg);
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* One column for the main content, and another for the sign-in section */
+    align-items: center;
+    background-color: #1e1e1e; /* Dark background color */
+    color: var(--color-text);
+    background-color: var(--color-dark-bg);
+    padding: 0 16px; /* Adjust padding as needed */
+}
+
+.button {
+    background-color: var(--color-primary-accent);
+    color: var(--color-text); 
+    height: 2em; /* Fixed height for the button */
+    padding: 0 1em; /* Horizontal padding of 1em, vertical padding removed */
+    cursor: pointer;
+    border: 2px solid var(--color-button-border);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Lato', sans-serif;
+    display: inline-flex; /* Use inline-flex to maintain button's inline behavior */
+    align-items: center; /* This aligns the text vertically */
+    justify-content: center; /* This centers the text horizontally */
+    /* Other styles */
+}
+
+.button:hover {
+    background-color: var(--color-button-hover);
+    border-color: var(--color-secondary-accent); 
+}
+
+.logo {
+    /* 1em is equal to the current font-size. Since we want the logo 1.5 times the height of the button (2em), we multiply by 1.5 */
+    height: 5em; /* This makes the logo 1.5 times the button height */
+    width: auto; /* Keep the aspect ratio of the image */
+    /* Adjust the margins as necessary */
+    margin-right: 1em; /* Creates space between the logo and any other elements to its right */
+}
+
+
+.sign-in {
+    display: flex;
+    justify-content: flex-end; /* Aligns the sign-in content to the far right */
+    align-items: center;
+    gap: 10px; /* This creates a gap between the address and the button */
+}
+
+.address-text {
+    margin-right: 10px; /* This will only take effect if you need extra spacing */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    align-items: center;
+    padding: 0.5em 0; /* Add some vertical padding */
+}
+
+.nav-link {
+    color: var(--color-text);
+    margin: 0 1em; /* Space out the links */
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-secondary-accent);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    /* Existing mobile CSS... */
+
+    .navigation {
+        order: 2; /* Reorder navigation to come after logo */
+        width: 100%; /* Full width to allow centering of links */
+        justify-content: space-around; /* Evenly distribute space around links */
+    }
+
+    .header {
+        grid-template-rows: auto 1fr auto; /* Adjust to fit the navigation row */
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-in {
+        order: 3; /* Reorder sign-in to the bottom */
+        flex-direction: column; /* Stack sign-in items */
+    }
+}
+  /* If you're not using any other content in the header and want the sign-in to be the only thing aligned to the right, you could remove the '1fr' from the 'grid-template-columns' property in the .header class. */
+  
