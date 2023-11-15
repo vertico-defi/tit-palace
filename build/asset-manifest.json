@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tit-paradise/static/css/main.5d98e608.css",
+    "main.js": "/tit-paradise/static/js/main.f5e9710d.js",
+    "static/js/787.fec58e52.chunk.js": "/tit-paradise/static/js/787.fec58e52.chunk.js",
+    "static/media/OpenSans-VariableFont_wdth,wght.ttf": "/tit-paradise/static/media/OpenSans-VariableFont_wdth,wght.071a1becc7f00e33cc5b.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/tit-paradise/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "static/media/RobotoSlab-VariableFont_wght.ttf": "/tit-paradise/static/media/RobotoSlab-VariableFont_wght.b6aa3c203f8622669cc6.ttf",
+    "static/media/nastyGirlsLogo.png": "/tit-paradise/static/media/nastyGirlsLogo.2ad244dbf93f357c91f0.png",
+    "static/media/Lato-Italic.ttf": "/tit-paradise/static/media/Lato-Italic.a9f3ee269217f44df65f.ttf",
+    "static/media/Lato-Regular.ttf": "/tit-paradise/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/tit-paradise/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/logo.svg": "/tit-paradise/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tit-paradise/index.html",
+    "main.5d98e608.css.map": "/tit-paradise/static/css/main.5d98e608.css.map",
+    "main.f5e9710d.js.map": "/tit-paradise/static/js/main.f5e9710d.js.map",
+    "787.fec58e52.chunk.js.map": "/tit-paradise/static/js/787.fec58e52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d98e608.css",
+    "static/js/main.f5e9710d.js"
+  ]
+}
