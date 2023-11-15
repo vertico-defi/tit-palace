@@ -79,6 +79,9 @@ body {
 .homepage h1 {
     color: var(--color-secondary-accent);
     margin-bottom: 1em; /* Add space below the header */
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 36pt;
 }
 
 .homepage p {
@@ -145,6 +148,38 @@ body {
     /* You can add more styles here specific to toast buttons if needed */
   }
   
+  .info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-rows: auto; /* Rows size will be determined by the content */
+    gap: 20px; /* Adjust the gap between columns and rows as needed */
+    align-items: center; /* Aligns items vertically in the center */
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 7.5%;
+}
+
+.text-column {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows for heading, paragraph, and button */
+    gap: 10px; /* Adjust the gap between rows as needed */
+}
+
+.image-column {
+    display: grid;
+    place-items: center;
+    position: relative; /* Needed for positioning the pseudo-element */
+}
+
+.image-column img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px; /* Adjust the radius to your preference */
+    opacity: 0.7;
+}
+
+
+
   /* Responsive design adjustments */
   @media (max-width: 768px) {
     .homepage {
