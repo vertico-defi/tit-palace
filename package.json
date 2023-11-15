@@ -1,7 +1,7 @@
 {
   "name": "exchange",
   "version": "0.1.0",
-  "homepage": "https://vertico-defi.github.io/tit-paradise",
+  "homepage": "https://vertico-defi.github.io/tit-palace",
   "private": true,
   "dependencies": {
     "@blocto/fcl": "^1.6.1",
