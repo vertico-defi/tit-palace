@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import { Link, useLocation, useNavigate } from 'react-router-dom';
 import * as fcl from "@onflow/fcl";
 import './header.css';
-import logo from '../../assets/photos/logoNew.png';
+import logo from '../../assets/photos/logoNew3.png';
 
 export default function Navigation() {
     const [user, setUser] = useState({ loggedIn: false, addr: null });

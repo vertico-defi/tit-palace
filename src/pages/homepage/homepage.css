@@ -3,7 +3,7 @@
 /* Utilizing the color scheme and fonts defined previously */
 /* Color Palette */
 :root {
-    --color-dark-bg: #1e1e1e; /* Main UI backgrounds, text, and elements */
+    --color-dark-bg: #000d1d; /* Main UI backgrounds, text, and elements */
     --color-primary-accent: #ff19cf; /* Emphasis on CTAs, interactive elements */
     --color-secondary-accent: #f9db87; /* Highlights, secondary buttons/borders */
     --color-light-bg: #f4f4f4; /* Backgrounds for contrast against dark elements */
@@ -75,6 +75,13 @@ body {
     font-family: 'Lato', sans-serif;
     color: var(--color-text);
 }
+
+.banner {
+    width: 100%;
+    padding-top: 2em;
+    height: auto; 
+}
+
 
 .homepage h1 {
     color: var(--color-secondary-accent);

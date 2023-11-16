@@ -10,6 +10,7 @@ import './homepage.css'
 import icon1 from '../../assets/photos/homepageIcon1.png';
 import icon2 from '../../assets/photos/homepageIcon2.png';
 import icon3 from '../../assets/photos/homepageIcon3.png';
+import banner from '../../assets/photos/homepageBanner.png';
 
 
 function HomePage() {
@@ -58,8 +59,9 @@ function HomePage() {
     return (
         
         <div className="homepage">
-            <h1>EXPLORE THE WONDERS OF $TIT PALACE</h1>
-            {/*
+            <img src={banner} className="banner" alt="banner for website homepage welcoming users to the site"></img>
+            {/*<h1>EXPLORE THE WONDERS OF $TIT PALACE</h1>
+            
             <p>Follow these simple steps to dive into the world of $TIT token:</p>
             <ol>
                 <li>

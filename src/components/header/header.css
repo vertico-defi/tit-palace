@@ -1,16 +1,30 @@
 /* Defining colors from the color palette */
 :root {
-    --color-dark-bg: #1e1e1e; /* Main UI backgrounds */
+    --color-dark-bg: #000d1d; /* Main UI backgrounds */
     --color-primary-accent: #ff19cf; /* Emphasis on CTAs */
     --color-secondary-accent: #f9db87; /* Highlights */
     --color-text: #f4f4f4; /* Main text color */
     --color-button-hover: #ff4fd5; /* Button hover state */
     --color-button-border: #ff66e0; 
+    --gold: #FFD700;
+    --soft-gold: #cba135;
+    --light-blue: #41729F;
+    --midnight-blue: #001f3f;
+    --royal-blue: #0047ab;
 }
+/*  --deep-blue: #000d1d;
+  --gold: #FFD700;
+  --midnight-blue: #001f3f;
+  --royal-blue: #0047ab;
+  --light-blue: #41729F;
+  --soft-gold: #cba135;
+  --cream: #f4f1de;
+
+*/
 
 .body {
     color: var(--color-text);
-    background-color: var(--color-dark-bg);
+    background-color: #000d1d;
     font-family: 'Lato', sans-serif;
 }
 
@@ -18,19 +32,19 @@
     display: grid;
     grid-template-columns: auto 1fr auto; /* One column for the main content, and another for the sign-in section */
     align-items: center;
-    background-color: #1e1e1e; /* Dark background color */
+    /*background-color: #000d1d;  Dark background color */
     color: var(--color-text);
-    background-color: var(--color-dark-bg);
+    background-color: #000d1d;
     padding: 0 16px; /* Adjust padding as needed */
 }
 
 .button {
-    background-color: var(--color-primary-accent);
-    color: var(--color-text); 
+    background-color: var(--soft-gold);
+    color: var(--midnight-blue); 
     height: 2em; /* Fixed height for the button */
     padding: 0 1em; /* Horizontal padding of 1em, vertical padding removed */
     cursor: pointer;
-    border: 2px solid var(--color-button-border);
+    border: 2px solid var(--midnight-blue);
     border-radius: 5px;
     transition: background-color 0.3s ease;
     font-family: 'Lato', sans-serif;
@@ -41,8 +55,8 @@
 }
 
 .button:hover {
-    background-color: var(--color-button-hover);
-    border-color: var(--color-secondary-accent); 
+    background-color: var(--soft-gold);
+    border-color: var(--royal-blue); 
 }
 
 .logo {
