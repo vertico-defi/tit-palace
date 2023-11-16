@@ -1,0 +1,18 @@
+.shop-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap between columns */
+    padding: 20px; /* Add padding to the sides */
+}
+
+.buy {
+    text-align: center;
+    /* border: 1px solid #ccc; Add a border around each item */
+    padding: 20px; /* Add padding around each item */
+}
+
+.coin-bag {
+    border-radius: 10%;
+    width: 50%;
+    height: auto;
+}

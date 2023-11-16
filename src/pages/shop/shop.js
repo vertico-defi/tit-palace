@@ -3,6 +3,12 @@ import { transferFlow } from '../../cadence/transferFlow';
 import * as fcl from '@blocto/fcl';
 import './shop.css'
 import { ToastContainer, toast } from 'react-toastify';
+import thirty from '../../assets/photos/coinBag11.png';
+import eighty from '../../assets/photos/coinBag10.png';
+import seventeen from '../../assets/photos/coinBag9.png';
+import thirtysix from '../../assets/photos/coinBag8.png';
+import ninetyfive from '../../assets/photos/coinBag7.png';
+import twenty from '../../assets/photos/coinBag6.png';
 
 function Shop() {
     // const [amountTit, setAmountTit] = useState("");
@@ -108,13 +114,37 @@ function Shop() {
     }
 
     return(
-        <div>
-            <button onClick={transferFlow6} > Purchase $TIT Token</button>
-            <button onClick={transferFlow15} > Purchase $TIT Token</button>
-            <button onClick={transferFlow30} > Purchase $TIT Token</button>
-            <button onClick={transferFlow60} > Purchase $TIT Token</button>
-            <button onClick={transferFlow150} > Purchase $TIT Token</button>
-            <button onClick={transferFlow300} > Purchase $TIT Token</button>
+        <div className="shop-page">
+            <div className="buy">
+                <img src={thirty} className="coin-bag" alt="small bag of tokens"></img>
+                <p>6 $FLOW → 30 $TIT</p>
+                <button onClick={transferFlow6} className="button">BUY</button>
+            </div>
+            <div className="buy">
+                <img src={eighty} className="coin-bag" alt="small bag of tokens"></img>
+                <p>15 $FLOW → 80 $TIT</p>
+                <button onClick={transferFlow15} className="button"> BUY</button>
+            </div>
+            <div className="buy">
+                <img src={seventeen} className="coin-bag" alt="small bag of tokens"></img>
+                <p>30 $FLOW → 170 $TIT</p>
+                <button onClick={transferFlow30} className="button"> BUY</button>
+            </div>
+            <div className="buy">
+                <img src={thirtysix} className="coin-bag" alt="small bag of tokens"></img>
+                <p>60 $FLOW → 360 $TIT</p>
+                <button onClick={transferFlow60} className="button"> BUY</button>
+            </div>
+            <div className="buy">
+                <img src={ninetyfive} className="coin-bag" alt="small bag of tokens"></img>
+                <p>150 $FLOW → 950 $TIT</p>
+                <button onClick={transferFlow150} className="button"> BUY</button>
+            </div>
+            <div className="buy">
+                <img src={twenty} className="coin-bag" alt="small bag of tokens"></img>
+                <p>300 $FLOW → 2000 $TIT</p>
+                <button onClick={transferFlow300} className="button"> BUY</button>
+            </div>
         </div>
     );
 }

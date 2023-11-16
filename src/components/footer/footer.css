@@ -1,0 +1,56 @@
+:root {
+    --gold: #FFD700;
+    --soft-gold: #cba135;
+    --light-blue: #41729F;
+    --midnight-blue: #001f3f;
+    --royal-blue: #0047ab;
+    --cream: #f4f1de; 
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #000d1d;
+    padding: 16px 0px;
+    align-items: center; /* Vertically align items within the footer */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text p {
+    font-family: 'OpenSans';
+    color: #f4f1de;
+    font-size: 12pt;
+}
+/*
+.logo-foot {
+    width: auto;
+    align-self: stretch; /* Match the height to the text columns 
+}*/
+.text-left p {
+    font-family: 'OpenSans';
+    color: #f4f1de;
+    font-size: 12pt;
+    padding-left: 12.5%;
+}
+
+/*.logo-foot {
+    height: 1.5em; /* Adjust the size as needed 
+    width: auto;
+    object-fit: contain;
+}*/
+
+.text p:after {
+    content: ' \00A9 2023'; /* Unicode character for copyright symbol (©) */
+} 

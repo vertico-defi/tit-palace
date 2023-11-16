@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/header/header"
-
+import Footer from "./components/footer/footer"
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import homepage from './pages/homepage/homepage';
@@ -20,6 +20,7 @@ function App() {
         <Route path='/shop' element={<ShopPage />} />
         <Route path='/rewards' element={<Rewards />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

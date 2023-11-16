@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 import './homepage.css'
 
 
-import icon1 from '../../assets/photos/homepageIcon1.png';
-import icon2 from '../../assets/photos/homepageIcon2.png';
-import icon3 from '../../assets/photos/homepageIcon3.png';
+import icon1 from '../../assets/photos/homepageIcon5.png';
+import icon2 from '../../assets/photos/homepageIcon6.png';
+import icon3 from '../../assets/photos/homepageIcon7.png';
 import banner from '../../assets/photos/homepageBanner.png';
 
 
@@ -81,11 +81,11 @@ function HomePage() {
                 <div className="text-column">
                     <h2>Gain Palace Entry</h2>
                     <p>
-                        Embark on a captivating journey through the mystical $TIT palace, where untold stories of remarkable women 
+                        Embark on a captivating journey through the mystical Tit Palace, where untold stories of remarkable women 
                         unfold within its sprawling walls. Dive into this enchanting world by establishing your presence on our 
                         platform today. Unveil the secrets that await you!
                     </p>
-                    <button onClick={initTitToken} style={{ width: 'auto', padding: '10px 20px' }} className="account-setup-button">Account Setup</button>
+                    <button onClick={initTitToken} style={{ width: 'auto', padding: '10px 20px' }} className="button">Account Setup</button>
                 </div>
                 <div className="image-column">
                     <img src={icon1}  alt="Woman walking thtrough a palace at night"></img> 
@@ -95,15 +95,26 @@ function HomePage() {
                 <div className="image-column">
                     <img src={icon2} alt="Woman  wwalking through a party at a palace"></img>
                 </div>
-                <div className="text-columnn">
-                    <h2>Unlock the Gates to Opulence with $TIT Tokens</h2>
+                <div className="text-column">
+                    <h2>Unlock Opulence with $TIT Tokens</h2>
                     <p>
-                        Step into a realm of exclusivity and enchantment. With $TIT tokens in your grasp, the doors to the palace's most 
-                        private chambers swing open, revealing a world of privileged content and luxurious features. Dare to explore the 
-                        hidden corridors and indulge in the rich tapestry of experiences curated just for the discerning eye. Acquire your 
-                        key to the kingdom today and become a part of the legend.
+                    Dive into a world of opulence with $TIT tokens, where hidden corridors and secret chambers unveil
+                     the untold stories of extraordinary women. These privileged narratives await those who hold the 
+                     key to the palace's mysteries, offering an exclusive journey into a realm of luxury and enchantment.
                     </p>
-                    <Link to="/shop" className="navigate-button">Go to Shop</Link>
+                    <Link to="/shop" className="button">Tit Palace Shop</Link>
+                </div>
+            </div>
+            <div className="info-box">
+                <div className="text-column">
+                    <h2>Explore Teasers</h2>
+                    <p>
+                        Use your $TIT tokens to access and enjoy our unique teaser puzzles. Embark on a captivating journey where mysteries unfold and secrets are revealed. Dive into this enchanting world by establishing your presence on our platform today.
+                    </p>
+                    <Link to="/teasers" className="button">Start Teasing</Link>
+                </div>
+                <div className="image-column">
+                    <img src={icon3}  alt="Woman walking thtrough a palace at night"></img> 
                 </div>
             </div>
             <ToastContainer position="bottom-right" autoClose={5000} hideProgressBar={false} />
