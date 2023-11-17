@@ -3,6 +3,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Adjust the gap between columns */
     padding: 20px; /* Add padding to the sides */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
 }
 
 .buy {
