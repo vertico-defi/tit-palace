@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tit-palace/static/css/main.11c098f1.css",
+    "main.css": "/tit-palace/static/css/main.7c70950a.css",
     "main.js": "/tit-palace/static/js/main.b7db72b3.js",
     "static/js/787.fec58e52.chunk.js": "/tit-palace/static/js/787.fec58e52.chunk.js",
     "static/media/coinBag6.png": "/tit-palace/static/media/coinBag6.70feb8eb3697c2c664f2.png",
@@ -23,12 +23,12 @@
     "static/media/Lato-Bold.ttf": "/tit-palace/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
     "static/media/logo.svg": "/tit-palace/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tit-palace/index.html",
-    "main.11c098f1.css.map": "/tit-palace/static/css/main.11c098f1.css.map",
+    "main.7c70950a.css.map": "/tit-palace/static/css/main.7c70950a.css.map",
     "main.b7db72b3.js.map": "/tit-palace/static/js/main.b7db72b3.js.map",
     "787.fec58e52.chunk.js.map": "/tit-palace/static/js/787.fec58e52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11c098f1.css",
+    "static/css/main.7c70950a.css",
     "static/js/main.b7db72b3.js"
   ]
 }
