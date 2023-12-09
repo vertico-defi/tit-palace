@@ -107,12 +107,13 @@ function HomePage() {
             </div>
             <div className="info-box">
                 <div className="text-column">
-                    <h2>Explore Teasers</h2>
+                    <h2>Embark on Exclusive Tours</h2>
                     <p>
-                        Use your $TIT tokens to access and enjoy our unique teaser puzzles. Embark on a captivating journey where mysteries unfold and secrets are revealed. Dive into this enchanting world by establishing your presence on our platform today.
+                        Unleash the full potential of your $TIT tokens by venturing into our exclusive palace tours. Immerse yourself in a world of intrigue and charm, where each step brings you closer to uncovering hidden treasures and intimate encounters. Secure your spot and begin a journey of discovery and excitement on our platform today.
                     </p>
-                    <Link to="/teasers" className="button">Start Teasing</Link>
+                    <Link to="/tours" className="button">Begin Your Tour</Link>
                 </div>
+
                 <div className="image-column">
                     <img src={icon3}  alt="Woman walking thtrough a palace at night"></img> 
                 </div>

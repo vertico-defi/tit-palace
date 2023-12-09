@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import * as fcl from '@onflow/fcl';
 import './lib/fcl/config';
 import {config} from '@onflow/fcl';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 /*
 if (window.location.protocol !== 'https:') {

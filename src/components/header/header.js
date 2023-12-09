@@ -34,7 +34,7 @@ export default function Navigation() {
             </Link>
         </div>
         <nav className="navigation">
-            <Link to="/teasers" className="nav-link">Teasers</Link>
+            <Link to="/tours" className="nav-link">Tours</Link>
             <Link to="/shop" className="nav-link">Shop</Link>
         </nav>
         <div className="sign-in">

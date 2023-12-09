@@ -1,0 +1,27 @@
+.slot-machine {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #ddd;
+    width: fit-content;
+    margin: auto;
+}
+
+.slot-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slot-row img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: contain;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

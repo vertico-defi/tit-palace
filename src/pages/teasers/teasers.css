@@ -1,0 +1,167 @@
+:root {
+    --color-dark-bg: #000d1d; /* Main UI backgrounds, text, and elements */
+    --color-primary-accent: #ff19cf; /* Emphasis on CTAs, interactive elements */
+    --color-secondary-accent: #f9db87; /* Highlights, secondary buttons/borders */
+    --color-light-bg: #f4f4f4; /* Backgrounds for contrast against dark elements */
+    --color-highlight-accent: #ffc0cb; /* Background highlights, soft UI elements */
+    --color-contrast-accent: #ffe600; /* Attention-drawing elements, warnings */
+    --color-neutral-dark: #333333; /* Subdued text/icons for less prominence */
+    --color-neutral-light: #e8e8e8; /* Dividers, subtle backgrounds */
+    --color-pink-tint: #ff4fd8; /* Lighter interactive elements, subtle accents */
+    --color-lightest-pink: #ff85db; /* Very subtle pink highlights, soft glow */
+    --color-pink-shade: #cc169b; /* Strong accents for contrast and depth */
+    --color-darkest-pink: #990f74; /* Bold elements requiring high contrast */
+    --color-gold-tint: #fbe5a3; /* Gentle warmth for notifications, soft alerts */
+    --color-lightest-gold: #fdeecd; /* Calm backgrounds, serene accents */
+    --color-gold-shade: #c6af6f; /* Rich interactive elements, mature highlights */
+    --color-darkest-gold: #93845b; /* Sturdy elements, grounding accents */
+    --gold: #FFD700;
+    --soft-gold: #cba135;
+    --light-blue: #41729F;
+    --midnight-blue: #001f3f;
+    --royal-blue: #0047ab;
+}
+
+@font-face {
+    font-family: 'Playfair-Bold';
+    src: url('../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tour-question-text {
+    font-family: 'Montserrat';
+
+    color: var(--color-lightest-gold); /* Example: setting text color */
+    font-size: 18px; /* Example: setting font size */
+    /* Add any other styles you want for this text */
+}
+
+.tour-question-container {
+    padding-left: 12.5%;
+}
+
+.teaser-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto; /* Change 1fr to auto for content-based sizing */
+    gap: 20px; /* Add some gap between rows */
+    align-items: center; /* Center the content vertically within each row */
+    text-align: center; 
+}
+
+.teaser-top h2 {
+    color: var(--color-secondary-accent);
+    font-family: "Playfair-Bold";
+    margin-bottom: 1em; /* Add space below the header */
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 36pt;
+}
+
+.teaser-top h3 {
+    color: var(--color-secondary-accent);
+    font-family: "Playfair-Bold";
+    margin-bottom: 1em; /* Add space below the header */
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 28pt;
+}
+
+.teaser-top h5 {
+    color: var(--color-secondary-accent);
+    font-family: "Playfair-Bold";
+    margin-bottom: 1em; /* Add space below the header */
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 14pt;
+}
+.entry-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Distribute columns evenly */
+    gap: 20px;
+    justify-content: center;
+}
+
+.entry-column {
+    text-align: center;
+}
+
+.entry-column h5 {
+    font-family: 'Playfair-Bold';
+    font-size: 24px;
+    color: var(--color-lightest-gold);
+}
+
+.entry-column p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: var(--color-lightest-gold);
+}
+
+.entry-column ul {
+    padding: 3%;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.entry-column li {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    padding: 1%;
+    color: var(--color-lightest-gold);
+}
+
+.entry-column img {
+    width: 75%; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the images */
+    margin: 0 auto; /* Center the images horizontally */
+    border: 2px solid var(--color-darkest-gold); /* Gray border for the video using hex code */
+    border-radius: 8px;
+    box-sizing: border-box; 
+    object-fit: contain;
+    margin-bottom: 7%;
+}
+
+.entry-button {
+    background-color: var(--soft-gold);
+    color: var(--midnight-blue); 
+    height: 2em; /* Fixed height for the button */
+    padding: 0 1em; /* Horizontal padding of 1em, vertical padding removed */
+    cursor: pointer;
+    border: 2px solid var(--midnight-blue);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Lato', sans-serif;
+    display: inline-flex; /* Use inline-flex to maintain button's inline behavior */
+    align-items: center; /* This aligns the text vertically */
+    justify-content: center; /* This centers the text horizontally */
+    /* Other styles */
+}
+
+.entry-button:hover {
+    background-color: var(--soft-gold);
+    border-color: var(--royal-blue); 
+}
+
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .entry-row {
+        grid-template-columns: 1fr; /* Three columns for larger screens */
+    }
+
+    .entry-column img {
+        width: 75%; /* Adjust image width for desktop */
+        margin-bottom: 7%; /* Adjust space below the image for desktop */
+    }
+
+    /* Adjust other styles as necessary for larger screens */
+}
