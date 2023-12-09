@@ -6,14 +6,11 @@
 </head>
 <body>
     <script>
-        // Define the base URL for your GitHub Pages site
-        var baseURL = '/tit-palace';
+        // Get the current URL path
+        var path = window.location.pathname;
 
-        // Get the current URL path excluding the base URL
-        var path = window.location.pathname.replace(baseURL, '');
-
-        // Redirect to the correct page under the base URL
-        window.location.href = baseURL + (path || '/');
+        // Redirect to the home page and append the path
+        window.location.replace('/tit-palace/' + path);
     </script>
 </body>
 </html>
