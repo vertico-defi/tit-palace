@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      (function() {
+          if (sessionStorage.redirect) {
+              const redirect = sessionStorage.redirect;
+              delete sessionStorage.redirect;
+              window.location.href = redirect;
+          }
+      })();
+    </script>
+  
 
   
     <meta charset="utf-8" />
@@ -27,15 +37,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script>
-      (function() {
-          var redirect = sessionStorage.redirect;
-          delete sessionStorage.redirect;
-          if (redirect && redirect != location.href) {
-              history.replaceState(null, null, redirect.replace(location.origin, ''));
-          }
-      })();
-    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
