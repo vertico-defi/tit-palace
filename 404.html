@@ -3,14 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Redirecting...</title>
-</head>
-<body>
     <script>
-        // Store the full URL in sessionStorage
-        sessionStorage.redirect = location.href;
-
-        // Redirect to the homepage
-        location.href = location.origin + '/';
+        sessionStorage.redirect = location.pathname + location.search;
+        window.location = "/";
     </script>
-</body>
+</head>
+<body></body>
 </html>
